@@ -31,3 +31,13 @@ span.validationError {
 .validationError {
     color: red;
 }
+
+.home-menu {
+    float: right;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.home-menu form {
+    margin-top: 10px;
+}
