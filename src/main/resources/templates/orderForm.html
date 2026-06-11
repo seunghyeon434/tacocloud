@@ -17,19 +17,12 @@
 
     <img th:src="@{/images/TacoCloud.png}"/>
 
+    <a th:href="@{/design}" id="design">Design another taco</a>
+
     <div class="validationError"
          th:if="${#fields.hasAnyErrors()}">
         Please correct the problems below and resubmit.
     </div>
-
-    <h3>Your tacos in this order:</h3>
-    <a th:href="@{/design}" id="design">Design another taco</a>
-    <ul>
-        <li th:each="taco : ${tacoOrder.tacos}"
-            th:text="${taco.name}">
-            Taco Name
-        </li>
-    </ul>
 
     <h3>Deliver my taco masterpieces to...</h3>
     <label for="deliveryName">Name: </label>
